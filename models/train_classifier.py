@@ -91,7 +91,13 @@ def build_model():
         ])),
         ('clf', MultiOutputClassifier(AdaBoostClassifier()))
     ])
-    return pipeline
+    
+    parameters = { 'clf__estimator__learning_rate':[0.1,0.3,0.5],
+              'clf__estimator__n_estimators':[10,80,100]}
+
+    cv = GridSearchCV(pipeline, param_grid=parameters, scoring='f1_micro', n_jobs=-1)
+    
+    return cv
 
 def evaluate_model(model, X_test, Y_test, category_names):
     y_pred = model.predict(X_test)
