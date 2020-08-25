@@ -1,5 +1,10 @@
 # Disaster Response Pipeline Project
 
+[//]: # (Image References)
+
+[image1]: ./examples/1.png "Visualization"
+[image2]: ./examples/2.png "Bar_class"
+
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
@@ -18,3 +23,7 @@ In this project, I did some initial study on the  natural language processing, I
 
 ### Results:
 An ETL pipleline was built to read data from two csv files, clean data, and save data into a SQLite database. A machine learning pipepline was developed to train a classifier to performs multi-output classification on the 36 categories in the dataset. A Flask app was created to show data visualization and classify the message that user enters on the web page.
+
+Screenshots
+![Visualization][image2]
+![Visualization][image2]
