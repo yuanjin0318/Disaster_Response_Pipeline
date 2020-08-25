@@ -2,8 +2,8 @@
 
 [//]: # (Image References)
 
-[image1]: ./examples/1.png "Visualization"
-[image2]: ./examples/2.png "Bar_class"
+[image1]: ./Screenshot1.png "Visualization"
+
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
